@@ -48,7 +48,8 @@ function frases_aleatorias()
     // generar un número aleatorio entre el 0 y el numero total del array -1
     $aleatorio = rand(0, $num_Items);
     //imprimir el array por pantalla
-    return $frases[$aleatorio];
+    
+    return "<blockquote class=\"blockquote pb-3\">\"".$frases[$aleatorio]."\"</blockquote>";
 }
 
 add_shortcode('ramdfrase', 'frases_aleatorias');
